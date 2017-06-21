@@ -1,1 +1,76 @@
 test for rajesh
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+expressions : 
+AngularJS expressions can be written inside double braces: {{ expression }}.
+
+AngularJS expressions can also be written inside a directive: ng-bind="expression".
+
+AngularJS will resolve the expression, and return the result exactly where the expression is written.
+
+AngularJS expressions are much like JavaScript expressions: They can contain literals, operators, and variables.
+
+Example {{ 5 + 5 }} or {{ firstName + " " + lastName }}
+
+------------------------------------------------------------------------------------------------------------------------------------
+module : 
+An AngularJS module defines an application.
+
+The module is a container for the different parts of an application.
+
+The module is a container for the application controllers.
+
+Controllers always belong to a module.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Directive
+AngularJS has a set of built-in directives which you can use to add functionality to your application.
+
+AngularJS lets you extend HTML with new attributes called Directives.
+
+AngularJS has a set of built-in directives which offers functionality to your applications.
+
+AngularJS also lets you define your own directives.
+
+The ng-app directive initializes an AngularJS application.
+
+The ng-init directive initializes application data.
+
+The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+
+**When naming a directive, you must use a camel case name, w3TestDirective, but when invoking it, you must use - separated name, w3-test-directive
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+You can invoke a directive by using:
+
+->Element name : <w3-test-directive></w3-test-directive>
+
+->Attribute : <div w3-test-directive></div>
+
+->Class : <div class="w3-test-directive"></div>
+
+->Comment : <!-- directive: w3-test-directive -->
+
+The legal restrict values are:
+->E for Element name
+->A for Attribute
+->C for Class
+->M for Comment (We've added the replace property in this example, otherwise the comment would be invisible.)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Scope
+The scope is the binding part between the HTML (view) and the JavaScript (controller).
+
+The scope is an object with the available properties and methods.
+
+The scope is available for both the view and the controller.
+
+------------------------------------------------------------------------------------------------------------------------------------
+Root Scope
+All applications have a $rootScope which is the scope created on the HTML element that contains the ng-app directive.
+
+The rootScope is available in the entire application.
